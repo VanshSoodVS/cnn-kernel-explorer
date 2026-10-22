@@ -6,7 +6,7 @@ Interactive companion to **Can trained CNN blocks be reused?**
 Supervisor: **Dr Anna Bosman**  
 University of Pretoria, COS700
 
-Explore the initial and trained kernels of three plain CNNs and three residual CNNs. The viewer contains the original saved numerical evidence, three distance definitions, five fixed cutoffs, original channel coordinates and full-precision CSV export. The report is included as `REPORT.pdf`.
+Explore the initial and trained kernels of three plain CNNs and three residual CNNs. The viewer contains the original saved numerical evidence, three distance definitions, five fixed cutoffs, original channel coordinates and full-precision CSV export.
 
 ## Use
 
@@ -20,4 +20,4 @@ For a local preview, run `python -m http.server 8000` from this directory and op
 
 ## Interpretation
 
-The visualiser shows structural similarity between individual kernels. It does not establish functional reuse of whole blocks. The separate directed replacement and bypass experiments are described in the report. These files do not run training or modify any model weights.
+The visualiser shows structural similarity between individual kernels. It does not establish functional reuse of whole blocks. These files do not run training or modify any model weights.
