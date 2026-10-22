@@ -14,7 +14,7 @@
     box.classList.remove('error');
     try {
       if (typeof DecompressionStream === 'undefined') {
-        throw new Error('This browser cannot open the compressed snapshot. Please open this page in a current version of Safari, Chrome, Firefox or Edge. The PDF report is available without the explorer.');
+        throw new Error('This browser cannot open the compressed snapshot. Please open this page in a current version of Safari, Chrome, Firefox or Edge.');
       }
       title.textContent = 'Loading this snapshot';
       note.textContent = 'Downloading saved weights and matches. On a mobile connection this can take a moment.';
@@ -41,7 +41,7 @@
         viewer.onerror = () => reject(new Error('The explorer controls could not load. Please reload this page.'));
         document.body.append(viewer);
       });
-      if (!window.KERNEL_VIEWER_READY) throw new Error('The explorer could not prepare this snapshot. Please reload the page, or use the report link above.');
+      if (!window.KERNEL_VIEWER_READY) throw new Error('The explorer could not prepare this snapshot. Please reload the page.');
       box.hidden = true;
     } catch (error) {
       document.getElementById('explorer-main').hidden = true;
